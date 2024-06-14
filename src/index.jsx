@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import Table from './pages/Table';
+import Drag from './pages/Drag';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,6 +28,7 @@ root.render(
           </ul>
           <Routes>
             <Route path="/table" element={<Table />} />
+            <Route path="/drag" element={<Drag />} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </div>

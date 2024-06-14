@@ -27,9 +27,9 @@ const Table = () => {
       </table>
       <nav>
         <ul className="pagination">
-          {new Array(totalPage).fill(0).map((item, index) => {
+          {new Array(totalPage).fill(0).map((_, index) => {
             return (
-              <li>
+              <li key={index}>
                 <button
                   className="btn btn-primary"
                   onClick={() => {
