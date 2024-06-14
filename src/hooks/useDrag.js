@@ -13,6 +13,8 @@ function useDrag() {
   const domRef = useRef(null);
   const [, forceUpdate] = useState({});
 
+  // useLayoutEffect 在所有 DOM 变更之后立即同步执行，浏览器执行绘制之前。，
+  // 执行的时机比 useEffect 早
   useLayoutEffect(() => {
     // 拖拽开始的 X 坐标、Y 坐标
     let startX, startY;
