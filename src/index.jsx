@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import Table from './pages/Table';
 import Drag from './pages/Drag';
+import Form from './pages/Form';
+import Animation from './pages/Animation';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from './pages/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
             <Route path="/table" element={<Table />} />
             <Route path="/drag" element={<Drag />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/animation" element={<Animation />} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </div>
